@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <script type="module" src="script.js" defer></script>
+  <title>Calculator</title>
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="calculator">
+      <div class="calculator__output">0</div>
+      <input type="text" class="calculator__input">
+      <div class="calculator__keys">
+        <button class="calculator__key calculator__key-operator">sin</button>
+        <button class="calculator__key calculator__key-operator">cos</button>
+        <button class="calculator__key calculator__key-operator">tan</button>
+        <button class="calculator__key calculator__key-operator">CE</button>
+        <button class="calculator__key calculator__key-operator">+</button>
+        <button class="calculator__key calculator__key-operator">-</button>
+        <button class="calculator__key calculator__key-operator">*</button>
+        <button class="calculator__key calculator__key-operator">/</button>
+        <button class="calculator__key calculator__key-operator">(</button>
+        <button class="calculator__key calculator__key-operator">)</button>
+        <button class="calculator__key calculator__key-operator">^</button>
+        <button class="calculator__key calculator__key-operator">sqrt</button>
+        <button class="calculator__key">7</button>
+        <button class="calculator__key">8</button>
+        <button class="calculator__key">9</button>
+        <button class="calculator__key">4</button>
+        <button class="calculator__key">5</button>
+        <button class="calculator__key">6</button>
+        <button class="calculator__key">1</button>
+        <button class="calculator__key">2</button>
+        <button class="calculator__key">3</button>
+        <button class="calculator__key">.</button>
+        <button class="calculator__key">0</button>
+        <button class="calculator__key calculator__key-operator">AC</button>
+        <button class="calculator__key calculator__key-enter">=</button>
+      </div>
+    </div>
+
+    <div class="features">
+
+      <div class="variables">
+        <h1 class="variable-header">Variables</h1>
+        <label for="variable-add-name">Name
+          <input type="text" class="variable-add-name" placeholder="Variable name">
+        </label>
+        <label for="variable-add-value">Value
+          <input type="text" class="variable-add-value" placeholder="Variable value">
+        </label>
+        <button id="variable-submit">Submit</button>
+        <table id="variable-table">
+          <thead class="variable-table-head">
+            <tr>
+                <th class="variable-table-cell">Name</th>
+                <th class="variable-table-cell">Value</th>
+                <th class="variable-table-cell">Action</th>
+            </tr>
+        </thead>
+        <tbody id="variable-table-body">
+  
+        </tbody>
+        </table>
+      </div>
+  
+      <div class="history">
+        <h1 class="history-header">History</h1>
+        <table id="history-table">
+          <thead class="history-table-head">
+            <tr>
+                <th class="history-table-cell">Expression</th>
+                <th class="history-table-cell">Result</th>
+                <th class="history-table-cell">Action</th>
+            </tr>
+        </thead>
+        <tbody id="history-table-body">
+  
+        </tbody>
+        </table>  
+      </div>
+    </div>
+
+  </div>
+  
+</body>
+</html>
